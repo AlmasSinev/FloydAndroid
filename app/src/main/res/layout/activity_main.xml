@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="АЛГОРИТМ ФЛОЙДА"
+        android:layout_marginTop="150dp"
+        android:textSize="58dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/title_textview" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="24dp"
+        android:id="@+id/btn_start"
+        android:layout_below="@+id/title_textview"
+        android:layout_centerHorizontal="true"
+        android:text="СТАРТ"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="@color/colorCircle">
+    </Button>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_start">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Количество вершин: "
+            android:textSize="18dp"
+            android:layout_weight="2">
+
+        </TextView>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:hint="0"
+            android:textSize="18dp"
+            android:inputType="phone"
+            android:id="@+id/edit_count">
+
+        </EditText>
+    </LinearLayout>
+</RelativeLayout>
